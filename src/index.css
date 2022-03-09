@@ -1,13 +1,142 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app {
+  margin: 3em auto;
+  border: 1px solid #3767a6;
+  width: 35em;
+  padding: 1em 2em;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  height: 100%;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.btn button {
+  background: #00968c;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 10px;
+  min-width: 4em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.taskContainer h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon {
+  color: red;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.active {
+  border-left: 10px solid #00968c;
+}
+
+.instruct {
+  background: #00968c;
+  color: #fff;
+  margin-top: 2em;
+  display: inline-block;
+  padding: 0 4px 3px;
+  border-radius: 5px;
+}
+
+.inputForm .textFields {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputForm {
+  font-size: 18px;
+  margin-bottom: 0.6em;
+  display: flex;
+  flex-direction: column;
+}
+
+.textFields label {
+  margin-top: 0.7em;
+  margin-bottom: 4px;
+}
+
+.textFields input {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 2px;
+  margin-left: 0.4em;
+}
+
+.textFields input:focus {
+  outline: 1px solid #00968c;
+  box-shadow: 2px 2px 2px #00968c;
+}
+
+.check {
+  margin-top: 0.7em;
+}
+
+.check input {
+  margin-left: 5em;
+  cursor: pointer;
+}
+
+.submit-Btn {
+  margin: 1em 0 1em 0.4em;
+  border: 0;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-length {
+  font-size: 20px;
+  font-weight: 400;
+  background: #00968c;
+  color: #fff;
+  display: inline-block;
+  padding: 0 4px 3px;
+  border-radius: 5px;
+  margin-top: 2em;
 }
